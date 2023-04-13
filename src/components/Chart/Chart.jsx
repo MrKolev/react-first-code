@@ -9,7 +9,7 @@ export function Chart({ dataPoints }) {
 
     return <div className="chart-set">
         <form action="submit">
-            <label>maximum budget for the month: </label>
+            <label>Maximum budget for the month: </label>
             <input type="number" step="1" value={total} onChange={changeTotal} />
         </form>
         <div className="chart">
