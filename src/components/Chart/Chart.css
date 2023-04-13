@@ -1,0 +1,55 @@
+.chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f8dfff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+  }
+.chart-set {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f8dfff;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .chart-set input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 8rem;
+    height: 27px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .chart-set button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1px 11px;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .chart-set button:hover,
+  .chart-set button:active {
+    background-color: #510674;
+    border-color: #510674;
+  }
+  
+  .chart-set button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .chart-set button.alternative:hover,
+  .chart-set button.alternative:active {
+    background-color: #ddb3f8;
+  }
