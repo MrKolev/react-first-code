@@ -8,25 +8,18 @@ export const ChartBar = ({ value, maxValue, label }) => {
         barFillHeight = Math.round((value / maxValue) * 100) + "%";
     }
 
-    
-    let [display, setDisplay] = useState("none")
-    const showAllMoney = () => { 
-        setDisplay("block")
-     }
-    const hideAllMoney = () => { 
-        setDisplay("none")
-     }
-  
+
+    const [isVisible, setIsVisible] = useState(false)
 
     return (
         <div className="chart-bar" >
-            <div className="chart-bar__inner" onMouseLeave={hideAllMoney} onMouseOver={showAllMoney}>
+            <div className="chart-bar__inner" onMouseLeave={() => setIsVisible(false)} onMouseOver={() => setIsVisible(true)}>
                 <div
                     className="chart-bar__fill"
                     style={{ height: barFillHeight }}></div>
             </div>
             <div className="chart-bar__label" >{label}</div>
-            <div className="chart-bar__label" style={{ display: display }} >{barFillHeight}</div>
+            {isVisible && <div className="chart-bar__label">{barFillHeight}</div>}
         </div>
     )
 

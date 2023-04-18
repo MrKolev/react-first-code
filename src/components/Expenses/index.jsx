@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Card from "../UI/Card.jsx";
-import './Expenses.css'
+import './index.css'
 import ExpensesFilter from "./ExpensesFilter.jsx";
 import { ExpensesList } from './ExpensesList.jsx';
-import { ExpensesChart } from './ExpensesChart.jsx';
+import { ExpensesChart } from './ExpensesChart/index.jsx';
 
 
 function Expenses({ items }) {
